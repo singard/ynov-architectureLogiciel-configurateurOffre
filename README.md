@@ -41,6 +41,15 @@ chemin implémenter
 get | /test | ok | permet de tester la liaison avec la BDD  
 get | /Produit/{id} | ok | permet de récupéré tout les élément d'un produit  
 
+
+|Produit|
+
+|id                int|  
+|name      varchar(50)|  
+|label    varchar(200)|  
+|prix            float|  
+|stock             int|  
+
 get /test qui permet de tester la liaison avec la BDD
 get /Produit/{id} permet de récupéré tout les élément d'un produit
 del /Produit/{id} permet de suprimer le produit portant cet id
