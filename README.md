@@ -45,6 +45,13 @@ chemin implémenter
 |set   | /setProduit   | /           |permet de modifier un produit                      |
 
 
+pour que cela fonctionne avec voter base de données il vous faut vérifier les champs suivant qui parle d'eu même :
+
+url=jdbc:mysql://localhost:3306/architecturelogicielproduit  
+user=root  
+password=  
+driverClassName=com.mysql.jdbc.Driver  
+
 /!\ prendre en compte les injections sql non voulu (voir poivre et sel sur les mot de passe (pris en compte avec api rest sql )
 
 

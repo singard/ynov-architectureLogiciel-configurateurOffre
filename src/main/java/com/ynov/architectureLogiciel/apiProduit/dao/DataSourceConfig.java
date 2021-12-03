@@ -19,16 +19,11 @@ public class DataSourceConfig {
 	    public DataSource dataSource() {
 	    	
 	            final DriverManagerDataSource dataSource = new DriverManagerDataSource();
-//	            dataSource.setDriverClassName(environment.getProperty("driverClassName"));
-//	            dataSource.setUrl(environment.getProperty("url"));
-//	            dataSource.setUsername(environment.getProperty("user"));
-//	            dataSource.setPassword(environment.getProperty("password"));
-	            
-	            dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-	            dataSource.setUrl("jdbc:mysql://localhost:3306/architecturelogicielproduit");
-	            dataSource.setUsername("root");
-	            dataSource.setPassword("");
-	            
+	            dataSource.setDriverClassName(environment.getProperty("driverClassName"));
+	            dataSource.setUrl(environment.getProperty("url"));
+	            dataSource.setPassword(environment.getProperty("password"));
+	            dataSource.setUsername(environment.getProperty("user"));
+
 	            return dataSource;
 	        
 	    }
