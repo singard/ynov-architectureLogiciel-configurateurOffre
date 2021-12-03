@@ -41,8 +41,9 @@ chemin implémenter
 |:---  | :------------ | :---------- | :------------------------------------------------ |
 |get   | /test         | ok          | permet de tester la liaison avec la BDD           |
 |get   | /produit/{id} | ok          | permet de récupéré tout les élément d'un produit  |
-|del   | /produit/{id} | /           |permet de suprimer un produit                      |
-|set   | /setProduit   | /           |permet de modifier un produit                      |
+|get   | /produit      | /           | permet de récupéré tout les produits              |
+|del   | /produit/{id} | /           | permet de suprimer un produit                     |
+|set   | /setProduit   | /           | permet de modifier un produit                     |
 
 
 /!\ prendre en compte les injections sql non voulu (voir poivre et sel sur les mot de passe (pris en compte avec api rest sql )
