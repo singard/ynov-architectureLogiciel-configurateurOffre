@@ -28,6 +28,12 @@ contenue de la table :
 ![image](https://user-images.githubusercontent.com/77006808/144564669-55de234d-a01a-4064-9f74-cb1d30e040da.png)
 
 
+
+Seconde étape, création de l'API qui discutera avec ma base de donnée, 
+==
+
+j'ai fait le choix d'une api en java car simple a mettre en place pour moi
+
 /!\ prendre en compte les injections sql non voulu (voir poivre et sel sur les mot de passe
 
 
