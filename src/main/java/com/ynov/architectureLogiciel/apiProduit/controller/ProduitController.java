@@ -9,13 +9,14 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
+@RestController
 public class ProduitController {
 
 	@Autowired
     ProduitRepository produitRepository;
 
     @GetMapping(value = "/produit/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity  getArticleById(@PathVariable int id){
+    public ResponseEntity<?>  getProduitById(@PathVariable int id){
     	
     	Produit produit = produitRepository.getById(id);
 
@@ -32,6 +33,8 @@ public class ProduitController {
 
         return new ResponseEntity<String>("pong", HttpStatus.OK);
     }
+    
+    
 
     
 
