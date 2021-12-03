@@ -14,7 +14,7 @@ table produit
 -
 
 
-###|Produit|
+### |Produit|
 
 |id                int|  
 |name      varchar(50)|  
