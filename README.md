@@ -39,14 +39,11 @@ chemin implémenter
 | type | chemin        | implémenter | description                                       |  
 |:---  | :------------ | :---------- | :------------------------------------------------ |
 |get   | /test         | ok          | permet de tester la liaison avec la BDD           |
-|get   | /Produit/{id} | ok          | permet de récupéré tout les élément d'un produit  |
+|get   | /produit/{id} | ok          | permet de récupéré tout les élément d'un produit  |
+|del   | /produit/{id} | /           |permet de suprimer un produit                      |
+|set   | /setProduit   | /           |permet de modifier un produit                      |
 
 
-
-get /test qui permet de tester la liaison avec la BDD
-get /Produit/{id} permet de récupéré tout les élément d'un produit
-del /Produit/{id} permet de suprimer le produit portant cet id
-
-/!\ prendre en compte les injections sql non voulu (voir poivre et sel sur les mot de passe
+/!\ prendre en compte les injections sql non voulu (voir poivre et sel sur les mot de passe (pris en compte avec api rest sql )
 
 
