@@ -41,7 +41,7 @@ chemin implémenter
 |:---  | :------------ | :---------- | :------------------------------------------------ |
 |get   | /test         | ok          | permet de tester la liaison avec la BDD           |
 |get   | /produit/{id} | ok          | permet de récupéré tout les élément d'un produit  |
-|get   | /produit      | /           | permet de récupéré tout les produits              |
+|get   | /produit      | ok          | permet de récupéré tout les produits              |
 |del   | /produit/{id} | /           | permet de suprimer un produit                     |
 |set   | /setProduit   | /           | permet de modifier un produit                     |
 
