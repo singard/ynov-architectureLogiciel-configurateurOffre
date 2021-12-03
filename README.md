@@ -41,8 +41,9 @@ chemin implémenter
 |:---  | :------------ | :---------- | :------------------------------------------------ |
 |get   | /test         | ok          | permet de tester la liaison avec la BDD           |
 |get   | /produit/{id} | ok          | permet de récupéré tout les élément d'un produit  |
-|del   | /produit/{id} | /           |permet de suprimer un produit                      |
-|set   | /setProduit   | /           |permet de modifier un produit                      |
+|get   | /produit      | /           | permet de récupéré tout les produits              |
+|del   | /produit/{id} | /           | permet de suprimer un produit                     |
+|set   | /setProduit   | /           | permet de modifier un produit                     |
 
 
 pour que cela fonctionne avec voter base de données il vous faut vérifier les champs suivant qui parle d'eu même :
