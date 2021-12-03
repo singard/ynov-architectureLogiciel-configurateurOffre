@@ -27,7 +27,8 @@ contenue de la table :
 
 ![image](https://user-images.githubusercontent.com/77006808/144564669-55de234d-a01a-4064-9f74-cb1d30e040da.png)
 
-
+le .sql de la base de donner et disponnible dans crs/main/resources/architecturelogicielproduit.sql
+base crée sous mysql
 
 Seconde étape, création de l'API qui discutera avec ma base de donnée, 
 ==
