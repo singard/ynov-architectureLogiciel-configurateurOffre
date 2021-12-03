@@ -8,6 +8,7 @@ public class ApiProduitApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ApiProduitApplication.class, args);
+		
 	}
 
 }
