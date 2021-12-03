@@ -1,5 +1,7 @@
 package com.ynov.architectureLogiciel.apiProduit.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,6 +27,18 @@ public class ProduitController {
         }
 
         return new ResponseEntity<Produit>(produit, HttpStatus.OK);
+    }
+    
+    @GetMapping(value = "/produit", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<?>  getAllProduit(){
+    	
+    	List<Produit> listProduit= produitRepository.findAll();
+
+        if(listProduit == null){
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("produit introuvable !");
+        }
+
+        return new ResponseEntity<List<Produit>>(listProduit, HttpStatus.OK);
     }
     
     @GetMapping(value = "/ping", produces = MediaType.APPLICATION_JSON_VALUE)
