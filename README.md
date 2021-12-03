@@ -15,7 +15,7 @@ table produit
 
 
 |Produit|
-____________________
+-----------------------
 |id                int|  
 |name      varchar(50)|  
 |label    varchar(200)|  
