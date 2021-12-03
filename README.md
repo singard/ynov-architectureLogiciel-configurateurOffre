@@ -33,8 +33,18 @@ base crée sous mysql
 Seconde étape, création de l'API qui discutera avec ma base de donnée, 
 ==
 
-j'ai fait le choix d'une api en java car simple a mettre en place pour moi
+j'ai fait le choix d'une api en java car simple et complet à mettre en place pour moi
 
-/!\ prendre en compte les injections sql non voulu (voir poivre et sel sur les mot de passe
+chemin implémenter
+
+| type | chemin        | implémenter | description                                       |  
+|:---  | :------------ | :---------- | :------------------------------------------------ |
+|get   | /test         | ok          | permet de tester la liaison avec la BDD           |
+|get   | /produit/{id} | ok          | permet de récupéré tout les élément d'un produit  |
+|del   | /produit/{id} | /           |permet de suprimer un produit                      |
+|set   | /setProduit   | /           |permet de modifier un produit                      |
+
+
+/!\ prendre en compte les injections sql non voulu (voir poivre et sel sur les mot de passe (pris en compte avec api rest sql )
 
 
