@@ -36,19 +36,12 @@ j'ai fait le choix d'une api en java car simple et complet à mettre en place po
 
 chemin implémenter
 
- type | chemin | implémenter | description |  
- :--- | :--- | :---  
-get | /test | ok | permet de tester la liaison avec la BDD  
-get | /Produit/{id} | ok | permet de récupéré tout les élément d'un produit  
+| type | chemin        | implémenter | description                                       |  
+|:---  | :------------ | :---------- | :------------------------------------------------ |
+|get   | /test         | ok          | permet de tester la liaison avec la BDD           |
+|get   | /Produit/{id} | ok          | permet de récupéré tout les élément d'un produit  |
 
 
-|Produit|
-
-|id                int|
-|name      varchar(50)|
-|label    varchar(200)|
-|prix            float|
-|stock             int|
 
 get /test qui permet de tester la liaison avec la BDD
 get /Produit/{id} permet de récupéré tout les élément d'un produit
