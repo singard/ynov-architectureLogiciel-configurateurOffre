@@ -2,6 +2,7 @@
 
 
 première étape :
+==
 
 création de la base de donnée
 
@@ -10,15 +11,21 @@ création de la base de donnée
 une seul table produit suffit pour nos besoin pour l'instant. par la suite, up-sell et cross-sell les catégories ou des hiérarchi pourait apparaitre.
 
 table produit
+-
 
 
 |Produit|
 ____________________
-|id                int|
-|name      varchar(50)|
-|label    varchar(200)|
-|prix            float|
-|stock             int|
+|id                int|  
+|name      varchar(50)|  
+|label    varchar(200)|  
+|prix            float|  
+|stock             int|  
+
+contenue de la table :
+-
+
+![image](https://user-images.githubusercontent.com/77006808/144564669-55de234d-a01a-4064-9f74-cb1d30e040da.png)
 
 
 /!\ prendre en compte les injections sql non voulu (voir poivre et sel sur les mot de passe
