@@ -46,12 +46,18 @@ chemin implémenter
 |set   | /setProduit   | /           | permet de modifier un produit                     |
 
 
-pour que cela fonctionne avec voter base de données il vous faut vérifier les champs suivant qui parle d'eu même :
+pour que cela fonctionne avec voter base de données il vous faut vérifier les champs suivant qui parle d'eu même  dans le dossier src/main/resources aplication.properties
 
 url=jdbc:mysql://localhost:3306/architecturelogicielproduit  
 user=root  
 password=  
 driverClassName=com.mysql.jdbc.Driver  
+
+pour lancé l'api avoir maven d'instaler et faire dans une console a la racine du projet 
+mvn clean install
+
+il y aura un jar générer dans le dossier target c'est lui qu'il faudra lancé dans un invite de commande
+java -jar nom.jar
 
 /!\ prendre en compte les injections sql non voulu (voir poivre et sel sur les mot de passe (pris en compte avec api rest sql )
 
